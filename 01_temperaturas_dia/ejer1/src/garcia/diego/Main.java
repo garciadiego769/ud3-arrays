@@ -10,7 +10,7 @@ public class Main {
         // write your code here
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         double[] temperatura;
-        temperatura = new double[3];
+        temperatura = new double[24];
         double min = 9999;
         double max = -9999;
         double suma = 0;
@@ -18,7 +18,7 @@ public class Main {
 
         /* Inicializamos el array asignandole 0 a todos sus valores */
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 24; i++) {
             System.out.println("Introduce temperatura:");
             temperatura[i] = Double.parseDouble(br.readLine());
             /* vamos almacenando el max y el min */
@@ -47,7 +47,7 @@ public class Main {
             suma = suma + temperatura[i];
 
         }
-        media = suma / 3;
+        media = suma / 24;
         System.out.println("MEDIA: " + media);
 
     }
